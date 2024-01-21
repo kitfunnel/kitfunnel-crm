@@ -3,7 +3,7 @@
 Plugin Name: KitFunnel CRM
 Plugin URI: https://kitfunnel.com
 Description: Personalización CRM
-Version: 1.1.1
+Version: 1.1.2
 Author: KitFunnel
 License: GPL 2+
 License URI: https://kitfunnel.com */ 
@@ -39,7 +39,7 @@ class KitFunnelCRM {
             //$this->licenselMessage=$this->mess;
 
 
-goto GzeYy; GzeYy: add_action("\x61\144\x6d\x69\x6e\137\145\156\x71\x75\x65\x75\x65\137\x73\143\x72\151\160\x74\x73", "\142\163\x5f\x63\165\163\164\x6f\x6d\137\x61\144\x6d\x69\156\137\163\164\x79\154\145\x73"); goto nOBLB; QBrld: add_action("\x77\160\137\145\156\x71\165\145\165\x65\137\163\x63\x72\x69\160\164\163", "\142\163\x5f\x63\x75\163\164\157\155\137\164\150\x65\155\x65\137\163\164\171\154\145\163"); goto Etl_m; nOBLB: function bs_custom_admin_styles() { $css_version = "\63\56\x33"; $css_url = add_query_arg("\x76", $css_version, plugins_url("\x2f\143\163\x73\57\163\x74\171\x6c\145\163\x2d\x61\144\x6d\151\x6e\56\x63\x73\163", __FILE__)); wp_enqueue_style("\143\165\163\164\x6f\155\55\141\x64\155\x69\x6e\x2d\x73\x74\x79\x6c\x65\x73", $css_url); } goto QBrld; Etl_m: function bs_custom_theme_styles() { $css_version = "\63\x2e\61"; $css_url = add_query_arg("\x76", $css_version, plugins_url("\x2f\143\163\x73\x2f\163\x74\171\x6c\x65\163\55\164\150\x65\155\145\x2e\143\163\x73", __FILE__)); wp_enqueue_style("\x63\x75\x73\x74\x6f\155\x2d\164\150\x65\155\x65\55\163\164\171\154\x65\x73", $css_url); } goto iPJZH; iPJZH:
+add_action('admin_enqueue_scripts','bs_custom_admin_styles');function bs_custom_admin_styles(){$css_version='3.4';$css_url=add_query_arg('v',$css_version,plugins_url('/css/styles-admin.css',__FILE__));wp_enqueue_style('custom-admin-styles',$css_url);}add_action('wp_enqueue_scripts','bs_custom_theme_styles');function bs_custom_theme_styles(){$css_version='3.1';$css_url=add_query_arg('v',$css_version,plugins_url('/css/styles-theme.css',__FILE__));wp_enqueue_style('custom-theme-styles',$css_url);}
 
 
         }else{
