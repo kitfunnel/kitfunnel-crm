@@ -3,7 +3,7 @@
 Plugin Name: KitFunnel CRM
 Plugin URI: https://kitfunnel.com
 Description: Personalización CRM
-Version: 1.1.2
+Version: 1.1.3
 Author: KitFunnel
 License: GPL 2+
 License URI: https://kitfunnel.com */ 
